@@ -1,0 +1,7 @@
+[user]
+	email = giako@giako.space
+	name = Giacomo Russo
+[push]
+	default = simple
+[core]
+	editor = vim
