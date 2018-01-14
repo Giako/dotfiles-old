@@ -3,8 +3,8 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
-    ~/.vim/vimrc:
-        path: vim/vimrc
+    ~/.vim:
+        path: vim/
         create: true
     ~/bin:
         path: bin/
