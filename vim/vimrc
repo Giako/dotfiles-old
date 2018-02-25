@@ -1,6 +1,26 @@
 " Vim configuration by Giako
 " Inspired from https://dougblack.io/words/a-good-vimrc.html
 
+" Automate vim-plug installation
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Vim-plug support
+call plug#begin('~/.vim/plugged')
+
+Plug 'sjl/badwolf'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-endwise'
+Plug 'jiangmiao/auto-pairs'
+
+call plug#end()
+
 " Colors
 syntax enable " enable syntax processing
 colorscheme badwolf " set colorscheme

@@ -1,0 +1,3 @@
+# exclude vim-plug installation directory
+plugged/
+autoload/plug.vim
