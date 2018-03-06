@@ -4,6 +4,7 @@ Dotfiles I use for different programs:
 
 - vim
 - tmux
+- oh-my-zsh
 
 Also, some scripts I use are included under `bin/`.
 
