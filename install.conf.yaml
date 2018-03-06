@@ -9,5 +9,5 @@
     ~/bin:
         path: bin/
         create: true
-
+    ~/.zshrc: zshrc
 
