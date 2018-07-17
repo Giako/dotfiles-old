@@ -11,4 +11,4 @@
         create: true
     ~/.zshrc: zshrc
     ~/.ideavimrc: ideavimrc
-
+    ~/.vrapperrc: vrapperrc
