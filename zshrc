@@ -95,6 +95,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Mac specific settings
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+export HOMEBREW_GITHUB_API_TOKEN=786637a25a6bdbc439ad43f383d9b40b93de96af
+
+# Added by Krypton
+export GPG_TTY=$(tty)
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/giako/.sdkman"
 [[ -s "/home/giako/.sdkman/bin/sdkman-init.sh" ]] && source "/home/giako/.sdkman/bin/sdkman-init.sh"
