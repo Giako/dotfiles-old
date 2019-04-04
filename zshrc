@@ -14,10 +14,15 @@ export GPG_ID=giako@giako.space
 export PATH="/usr/local/sbin:$PATH"
 
 # Mac specific settings
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+case `uname` in
+    Darwin)
+        test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+        export NVM_DIR="$HOME/.nvm"
+        . "/usr/local/opt/nvm/nvm.sh"
+    ;;
+    Linux)
+    ;;
+    esac
 
 # Added by Krypton
 export GPG_TTY=$(tty)
