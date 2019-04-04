@@ -18,7 +18,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-endwise'
 Plug 'jiangmiao/auto-pairs'
+Plug 'wakatime/vim-wakatime'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-sensible'
 
 call plug#end()
 

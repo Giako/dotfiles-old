@@ -10,4 +10,6 @@
         path: bin/
         create: true
     ~/.zshrc: zshrc
-
+    ~/.ideavimrc: ideavimrc
+    ~/.vrapperrc: vrapperrc
+    ~/.profile-secrets: profile-secrets
