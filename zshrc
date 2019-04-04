@@ -1,4 +1,11 @@
-source /usr/local/share/antigen/antigen.zsh
+case `uname` in
+    Darwin)
+        source /usr/local/share/antigen/antigen.zsh
+    ;;
+    Linux)
+        source /usr/share/zsh-antigen/antigen.zsh
+    ;;
+    esac
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle docker
