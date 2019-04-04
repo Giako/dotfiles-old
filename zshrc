@@ -12,6 +12,7 @@ antigen apply
 
 export GPG_ID=giako@giako.space
 export PATH="/usr/local/sbin:$PATH"
+export TERM=xterm-256color
 
 # Mac specific settings
 case `uname` in
