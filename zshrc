@@ -15,6 +15,7 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle gmatheu/zsh-plugins profile-secrets
 antigen theme robbyrussell
+antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 
 export GPG_ID=giako@giako.space
