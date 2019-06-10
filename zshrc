@@ -28,6 +28,11 @@ case `uname` in
         test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
         export NVM_DIR="$HOME/.nvm"
         . "/usr/local/opt/nvm/nvm.sh"
+        export ANDROID_HOME=$HOME/Library/Android/sdk
+        export PATH=$PATH:$ANDROID_HOME/emulator
+        export PATH=$PATH:$ANDROID_HOME/tools
+        export PATH=$PATH:$ANDROID_HOME/tools/bin
+        export PATH=$PATH:$ANDROID_HOME/platform-tools
     ;;
     Linux)
     ;;
