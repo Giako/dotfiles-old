@@ -1,2 +1,3 @@
 # .gitignore
 vim/.netrwhist
+vim/autoload
