@@ -5,7 +5,8 @@ case `uname` in
     Linux)
         source /usr/share/zsh-antigen/antigen.zsh
     ;;
-    esac
+esac
+    
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle docker
@@ -33,6 +34,8 @@ case `uname` in
         export PATH=$PATH:$ANDROID_HOME/tools
         export PATH=$PATH:$ANDROID_HOME/tools/bin
         export PATH=$PATH:$ANDROID_HOME/platform-tools
+        source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+        PS1='$(kube_ps1)'$PS1
     ;;
     Linux)
     ;;
