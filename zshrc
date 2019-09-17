@@ -8,6 +8,7 @@ case `uname` in
 esac
     
 antigen use oh-my-zsh
+antigen bundle lukechilds/zsh-nvm
 antigen bundle git
 antigen bundle docker
 antigen bundle lein
