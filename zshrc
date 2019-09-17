@@ -27,8 +27,6 @@ export TERM=xterm-256color
 case `uname` in
     Darwin)
         test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-        export NVM_DIR="$HOME/.nvm"
-        . "/usr/local/opt/nvm/nvm.sh"
         export ANDROID_HOME=$HOME/Library/Android/sdk
         export PATH=$PATH:$ANDROID_HOME/emulator
         export PATH=$PATH:$ANDROID_HOME/tools
@@ -44,3 +42,7 @@ case `uname` in
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
