@@ -21,6 +21,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 
 export GPG_ID=giako@giako.space
+export GPG_TTY=`tty`
 export PATH="/usr/local/sbin:$PATH"
 export TERM=xterm-256color
 
