@@ -16,13 +16,14 @@ antigen bundle kubectl
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle gmatheu/zsh-plugins profile-secrets
+antigen bundle kube-ps1
 antigen theme robbyrussell
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 
+export PATH="/usr/local/sbin:$PATH"
 export GPG_ID=giako@giako.space
 export GPG_TTY=`tty`
-export PATH="/usr/local/sbin:$PATH"
 export TERM=xterm-256color
 
 # Mac specific settings
@@ -38,6 +39,7 @@ case `uname` in
         PS1='$(kube_ps1)'$PS1
     ;;
     Linux)
+        PROMPT=$PROMPT'$(kube_ps1) '
     ;;
     esac
 
